@@ -31,7 +31,7 @@ export const createNoteSchema = Joi.object({
   content: Joi.string().allow('').optional(),
   tag: Joi.string()
     .valid(...TAGS)
-    .optional(),
+    .default('Todo'),
 });
 
 export const updateNoteSchema = {
