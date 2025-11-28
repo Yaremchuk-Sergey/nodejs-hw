@@ -16,7 +16,7 @@ import {
   updateNoteSchema,
 } from '../validations/notesValidation.js';
 
-import authenticate from '../middlewares/authenticate.js';
+import { authenticate } from '../middleware/authenticate.js';
 
 const router = express.Router();
 
